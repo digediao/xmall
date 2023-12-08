@@ -1,5 +1,6 @@
 package cn.exrick.common.utils;
 
+import cn.exrick.common.constant.MobIpConstant;
 import cn.exrick.common.pojo.IpInfo;
 import cn.exrick.common.pojo.IpWeatherResult;
 import cn.hutool.http.HttpRequest;
@@ -13,7 +14,9 @@ import java.net.UnknownHostException;
 
 
 /**
- * @author Exrickx
+ * @author digediao
+ * @version 1.0.0
+ * @description Mob天气系统工具类
  */
 public class IPInfoUtil {
 
@@ -22,7 +25,7 @@ public class IPInfoUtil {
     /**
      * Mob官网注册申请即可
      */
-    private final static String APPKEY = "你的APPKEY";
+    private final static String APPKEY = MobIpConstant.APPKEY;
     /**
      * Mob全国天气预报接口
      */

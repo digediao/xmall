@@ -1,5 +1,6 @@
 package cn.exrick.common.utils;
 
+import cn.exrick.common.constant.QiniuConstant;
 import cn.exrick.common.exception.XmallUploadException;
 import com.google.gson.Gson;
 import com.qiniu.common.QiniuException;
@@ -36,10 +37,10 @@ public class QiniuUtil {
     /**
      * 生成上传凭证，然后准备上传
      */
-    private static String accessKey = "你的accessKey";
-    private static String secretKey = "你的secretKey";
-    private static String bucket = "你的空间名，例如xmall";
-    private static String origin="你的域名，例如http://pbsw9oba0.bkt.clouddn.com/";
+    private static String accessKey = QiniuConstant.accessKey;
+    private static String secretKey = QiniuConstant.secretKey;
+    private static String bucket = QiniuConstant.bucket;
+    private static String origin = QiniuConstant.origin;
     private static  Auth auth = Auth.create(accessKey, secretKey);
 
 
